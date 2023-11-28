@@ -1,0 +1,129 @@
+
+/*Reloj Mundia*/
+body {
+  font-family: 'Sirin Stencil', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h2{
+  margin: 0 auto;
+}
+#clock {
+  width: 30vw;
+  height: auto;
+  background-color: lightskyblue;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+@media (max-width: 1240px) {
+  #clock {
+    width: 40vw;
+    height: auto;
+    
+  }
+}
+@media (max-width: 768px) {
+  #clock {
+    width: 80vw;
+    height: auto;
+    
+  }
+}
+@media (max-width: 468px) {
+  #clock {
+    width: 80vw;
+    height: auto;
+  }
+}
+#alarm-button,
+#stopwatch-controls,
+#stopwatch-display {
+  margin: 10px;
+}
+#alarm-time{
+  margin: 20px 6px 10px 6px;
+  width: 5.2rem;
+  height: 2.2rem;
+  border: 2px #333 outset;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+#country-select{
+  margin: 10px;
+  width: 10rem;
+  height: 2.2rem;
+  border: 2px #333 outset;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+#alarm-button,
+#stopwatch-start,
+#stopwatch-stop,
+#stopwatch-reset {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+#alarm-button {
+  background-color: #333;
+}
+#alarm-button:hover{
+  background-color: #3498db;
+}
+#alarm-button.activated {
+  background-color: #2ecc71;
+}
+
+#alarm-button.deactivated {
+  background-color: #e74c3c;
+}
+
+#stopwatch-start,
+#stopwatch-reset {
+  background-color: #2229e6;
+}
+
+#stopwatch-reset {
+  margin-left: 5px;
+}
+
+#stopwatch-start:hover{
+  background-color: #00d33f;
+}
+#stopwatch-reset:hover {
+  background-color: #00acd3;
+}
+
+#stopwatch-display {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+#audio-container {
+  margin-top: 10px;
+}
+
+.audio-off{
+  display:none;
+}
+.audio-on{
+  display:block;
+}
+
+

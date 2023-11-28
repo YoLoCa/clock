@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/clock.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap">
+
+    <title>World Clock</title>
+  </head>
+  <body>
+    <div id="clock">
+        <h2>Reloj Mundial</h2>
+          <select id="country-select">
+            <option value="Europe/Madrid">Madrid</option>
+            <option value="America/New_York">New York</option>
+            <option value="America/Los_Angeles">Los Angeles</option>
+            <option value="Europe/London">London</option>
+            <option value="Europe/Paris">Paris</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+            <option value="Asia/Dubai">Dubai</option>
+            <option value="Asia/Hong_Kong">Hong Kong</option>
+            <option value="Australia/Sydney">Sydney</option>
+            <option value="America/Chicago">Chicago</option>
+            <option value="America/Denver">Denver</option>
+            <option value="Asia/Shanghai">Shanghai</option>
+            <option value="Asia/Singapore">Singapore</option>
+            <option value="Europe/Berlin">Berlin</option>
+            <option value="Europe/Madrid">Madrid</option>
+            <option value="Africa/Cairo">Cairo</option>
+            <option value="Africa/Johannesburg">Johannesburg</option>
+            <option value="Australia/Melbourne">Melbourne</option>
+            <option value="America/Toronto">Toronto</option>
+            <!-- Add more countries as needed -->
+          </select>
+          <div id="country-time"></div> <!-- End Reloj mundial -->
+
+          <!-- Alarma -->
+          <div id="alarm-input">
+          <label for="alarm-time">Alarma:</label>
+          <input type="time" id="alarm-time">
+          <button id="alarm-button">Activar</button>
+        </div>
+        <div id="audio-container" class="audio-off">
+          <audio id="audio" controls>
+            <source src="alarma.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+          </audio>
+        </div>
+        <div id="stopwatch-controls">
+         <h2>Cronómetro</h2> 
+         <div id="stopwatch-display">0:00.00</div>
+          <button id="stopwatch-start">Start</button>
+          <button id="stopwatch-reset">Reset</button>
+      </div>
+      
+      </div>
+  </body>
+  <script src="js/clock.js"></script>
+</html>
