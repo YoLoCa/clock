@@ -26,7 +26,10 @@
 //Funcion canción
     function playAudio() {
         if(alarmActive){
-            audio.play();
+          audio.play();
+          const controles = document.getElementById('audio-container');
+          controles.classList.remove('audio-off');
+          controles.classList.add('audio-on');    
         }
     }
     //Funcionalidad boton Alarma
@@ -58,7 +61,7 @@
               // Deactivate the button after a delay and update text
               setTimeout(() => {
                 alarmButton.classList.remove('activated');
-                alarmButton.classList.add('deactivated');
+                alarmButton.classList.remove('deactivated');
                 alarmButton.textContent = 'Activar';
                 alarmActive = false;
               }, 2000); // 2000 milliseconds (2 seconds) delay

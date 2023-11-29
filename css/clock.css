@@ -42,7 +42,10 @@ h2{
 @media (max-width: 468px) {
   #clock {
     width: 80vw;
-    height: auto;
+    height: auto;   
+  }
+  h2{
+    font-size: 1.8rem;
   }
 }
 #alarm-button,
@@ -57,6 +60,7 @@ h2{
   border: 2px #333 outset;
   border-radius: 5px;
   font-size: 1.1rem;
+  padding: 2px 2px 2px 8px;
 }
 #country-select{
   margin: 10px;
