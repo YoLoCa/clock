@@ -77,9 +77,13 @@
             stopwatchActive = true;
             stopwatchStartTime = Date.now() - stopwatchElapsedTime;
             stopwatchInterval = setInterval(updateStopwatch, 10);
+            stopwatchStartButton.style.backgroundColor = '#e74c3c';
+            stopwatchStartButton.textContent = 'Stop';
         } else{
             clearInterval(stopwatchInterval);
             stopwatchActive = false;
+            stopwatchStartButton.textContent = 'Star';
+            stopwatchStartButton.style.backgroundColor = '#2229e6';
         }
     }
 

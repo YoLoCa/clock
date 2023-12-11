@@ -107,11 +107,13 @@ h2{
   margin-left: 5px;
 }
 
-#stopwatch-start:hover{
-  background-color: #00d33f;
+#stopwatch-start:hover,
+#stopwatch-reset:hover 
+{
+  opacity: .6;
 }
-#stopwatch-reset:hover {
-  background-color: #00acd3;
+.stop{
+  background-color: #e74c3c;
 }
 
 #stopwatch-display {
